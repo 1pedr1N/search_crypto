@@ -6,13 +6,20 @@ export const Container = styled.header`
     align-items: center;
     width: 100%;
     height: 10vh;
-    background: #454545;
+    background: gray;
     color: #fff;
     text-align: center;
     padding: 0 1rem;
-    h1 {
-        font-size: 2rem;
-     
+ div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+    h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-right:0.3rem;
     }
 
 `;
