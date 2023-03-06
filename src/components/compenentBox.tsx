@@ -1,11 +1,13 @@
 import * as  S from '../styles/componentBox';
-
-const Box = () => {
+import { IBox } from '@/interfaces/box.interface';
+import Image from 'next/image';
+const Box = ({...props} : IBox) => {
     return (
         <S.Container>
-        <h1>FOTO DA MOEDA</h1>
-        <S.Text>BITCOIN</S.Text>
-        <S.Value>US$ 50.000,00</S.Value>
+      <h1>img aq</h1>
+        <S.Text>{props.title}</S.Text>
+        <S.Value>{props.value}</S.Value>
+    
         </S.Container>
     );
     };
